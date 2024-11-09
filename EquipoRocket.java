@@ -21,10 +21,10 @@ public class EquipoRocket {
         do {
             System.out.println("Menú Principal");
             System.out.println("Simulador de Batallas Pokémon");
-            System.out.println("1. Gestionar Entrenadores");
-            System.out.println("2. Gestionar Pokémones");
-            System.out.println("3. Iniciar Batalla");
-            System.out.println("4. Salir");
+            System.out.println("1.  Gestionar Entrenadores");
+            System.out.println("2.  Gestionar Pokémones");
+            System.out.println("3.  Iniciar Batalla");
+            System.out.println("4.  Salir");
             System.out.print("Selecciona una opción: ");
             opcion = lector.nextInt();
 
