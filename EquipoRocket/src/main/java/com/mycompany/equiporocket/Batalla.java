@@ -33,7 +33,7 @@ public class Batalla {
     
     public void atacar(Pokemon atacante, Pokemon defensor) {
         
-        double multiplicador = atacante.getTipo().obtenerMultiplicadorDeDanio(defensor.getTipo());
+        double multiplicador = atacante.getTipo().obtenerMultiplicadorDeDanio(atacante.getTipo(), defensor.getTipo());
         double dano = atacante.getPuntosDeAtaque();
         defensor.setSalud(defensor.getSalud() - dano);  // Reducir la salud del defensor por el daño recibido
         

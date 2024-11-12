@@ -176,7 +176,7 @@ public double obtenerMultiplicadorDeDanio(TipoPokemon atacante,TipoPokemon defen
     return 0;   
 }
 
-    double obtenerMultiplicadorDeDanio(TipoPokemon tipo) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+ 
+        
+    
 }
