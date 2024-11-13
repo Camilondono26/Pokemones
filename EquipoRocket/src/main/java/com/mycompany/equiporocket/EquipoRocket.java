@@ -1,8 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
 package com.mycompany.equiporocket;
 
+import com.mycompany.equiporocket.Pokemones.Cubone;
+import com.mycompany.equiporocket.Pokemones.Doduo;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -10,12 +9,12 @@ import java.util.Scanner;
 public class EquipoRocket {
 
     public static void main(String[] args) {
-        // Llamamos al menú principal al iniciar la aplicación
         menuPrincipal();
     }
 
     // Menú principal
     public static void menuPrincipal() {
+        
         Scanner lector = new Scanner(System.in);
         int opcion;
 
@@ -31,25 +30,24 @@ public class EquipoRocket {
 
             switch (opcion) {
                 case 1:
-                    gestionarEntrenadores(lector);  
-                    break; 
+                    gestionarEntrenadores(lector);
+                    break;
                 case 2:
-                    gestionarPokemones(lector);  
+                    gestionarPokemones(lector);
                     break;
                 case 3:
-                    iniciarBatalla(lector);  
+                    iniciarBatalla(lector);
                     break;
                 case 4:
                     System.out.println("Saliendo... ¡Hasta luego!");
-                    break;  
+                    break;
                 default:
                     System.out.println("Opción no válida. Intenta de nuevo.");
                     break;
             }
-        } while (opcion != 4);  
+        } while (opcion != 4);
     }
 
-    // Submenú para gestionar entrenadores
     private static void gestionarEntrenadores(Scanner lector) {
 
         List<Entrenador> entrenadores = new ArrayList<>();
@@ -63,7 +61,7 @@ public class EquipoRocket {
             System.out.println("3. Seleccionar un entrenador");
             System.out.println("4. Volver al menú principal");
             System.out.print("Selecciona una opción: ");
-            opcionMenu1 = lector.nextInt();  
+            opcionMenu1 = lector.nextInt();
 
             switch (opcionMenu1) {
                 case 1:
@@ -82,10 +80,9 @@ public class EquipoRocket {
                     System.out.println("Opción no válida. Intenta de nuevo.");
                     break;
             }
-        } while (opcionMenu1 != 4); 
+        } while (opcionMenu1 != 4);
     }
 
-    // Submenú para gestionar Pokémones
     private static void gestionarPokemones(Scanner lector) {
         int opcionMenu2;
 
@@ -97,12 +94,12 @@ public class EquipoRocket {
             System.out.print("Selecciona una opción: ");
 
             List<Pokemon> pokemones = new ArrayList<>();
-            opcionMenu2 = lector.nextInt();  
+            opcionMenu2 = lector.nextInt();
 
             switch (opcionMenu2) {
                 case 1:
                     verTodosPokemones(pokemones);
-                    break;  
+                    break;
                 case 2:
                     registrarPokemon(lector, pokemones);
                     break;
@@ -113,7 +110,7 @@ public class EquipoRocket {
                     System.out.println("Opción no válida. Intenta de nuevo.");
                     break;
             }
-        } while (opcionMenu2 != 3);  
+        } while (opcionMenu2 != 3);
     }
 
     private static void iniciarBatalla(Scanner lector) {
@@ -128,18 +125,18 @@ public class EquipoRocket {
             System.out.println("5. Comenzar batalla");
             System.out.println("6. Volver al menú principal");
             System.out.print("Selecciona una opción: ");
-            opcionMenu3 = lector.nextInt();  
+            opcionMenu3 = lector.nextInt();
 
             switch (opcionMenu3) {
                 case 1:
                     System.out.println("Elegir entrenador 1");
-                    break;  
+                    break;
                 case 2:
                     System.out.println("Elegir entrenador 2");
                     break;
                 case 3:
                     System.out.println("Seleccionar Pokémon de entrenador 1");
-                    break;  
+                    break;
                 case 4:
                     System.out.println("Seleccionar Pokémon de entrenador 2");
                     break;
@@ -153,7 +150,7 @@ public class EquipoRocket {
                     System.out.println("Opción no válida. Intenta de nuevo.");
                     break;
             }
-        } while (opcionMenu3 != 6);  
+        } while (opcionMenu3 != 6);
     }
 
     private static void registrarEntrenador(Scanner lector, List<Entrenador> entrenadores) {
@@ -194,20 +191,20 @@ public class EquipoRocket {
     }
 
     private static void verTodosPokemones(List<Pokemon> pokemones) {
-       System.out.println("Lista de Pokémones:");
-       for (Pokemon pokemon : pokemones) {
-           System.out.println("- " + pokemon.getNombre());
-       }
+        System.out.println("Lista de Pokémones:");
+        for (Pokemon pokemon : pokemones) {
+            System.out.println("- " + pokemon.getNombre());
+        }
     }
 
     private static void registrarPokemon(Scanner lector, List<Pokemon> pokemones) {
-   System.out.print("Introduce el nombre del Pokémon: ");
-    String nombre = lector.next();
-    System.out.print("Introduce el tipo del Pokémon (e.g., Fuego, Agua): ");
-    String tipo = lector.next();
-    pokemones.add(new pokemon(nombre, tipo)); // Ajusta el constructor según la clase Pokemon
-    System.out.println("Pokémon registrado correctamente.");
+    System.out.println("Ingrese el nombre del Pokémon:");
+        lector.nextLine();
+        String nombre = lector.nextLine();
+        Pokemon pokemon = new Cubone(); 
+        Pokemon pokemon1 = new Doduo();
+        pokemones.add(pokemon);
+        System.out.println("Pokémon " + nombre + " registrado exitosamente.");
+    }
     }
 
-}
- 

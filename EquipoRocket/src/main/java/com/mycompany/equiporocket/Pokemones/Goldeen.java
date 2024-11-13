@@ -14,8 +14,8 @@ import com.mycompany.equiporocket.TipoPokemon;
  */
 public class Goldeen extends Pokemon {
     
-    public Goldeen(String nombre, double salud, double puntosDeAtaque, TipoPokemon tipo, EstadoPokemon estado) {
-        super("Goldeen", 45, 67, tipo.AGUA, estado.NORMAL);
+    public Goldeen() {
+        super("Goldeen", 45, 67, TipoPokemon.AGUA, EstadoPokemon.NORMAL);
     }
     
 }

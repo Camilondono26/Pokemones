@@ -14,8 +14,8 @@ import com.mycompany.equiporocket.TipoPokemon;
  */
 public class Hitmonchan extends Pokemon {
     
-    public Hitmonchan(String nombre, double salud, double puntosDeAtaque, TipoPokemon tipo, EstadoPokemon estado) {
-        super("Hitmonchan", 50, 105, tipo.LUCHA, estado.NORMAL);
+    public Hitmonchan() {
+        super("Hitmonchan", 50, 105, TipoPokemon.LUCHA, EstadoPokemon.NORMAL);
     }
     
 }

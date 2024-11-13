@@ -14,8 +14,8 @@ import com.mycompany.equiporocket.TipoPokemon;
  */
 public class Ponyta extends Pokemon {
     
-    public Ponyta(String nombre, double salud, double puntosDeAtaque, TipoPokemon tipo, EstadoPokemon estado) {
-        super("Ponyta", 50, 85, tipo.FUEGO, estado.NORMAL);
+    public Ponyta() {
+        super("Ponyta", 50, 85, TipoPokemon.FUEGO, EstadoPokemon.NORMAL);
     }
     
 }

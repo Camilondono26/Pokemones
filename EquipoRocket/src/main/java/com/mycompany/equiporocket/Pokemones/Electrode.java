@@ -14,8 +14,8 @@ import com.mycompany.equiporocket.TipoPokemon;
  */
 public class Electrode extends Pokemon {
     
-    public Electrode(String nombre, double salud, double puntosDeAtaque, TipoPokemon tipo, EstadoPokemon estado) {
-        super("Electrode", 60, 50, tipo.ELECTRICO, estado.NORMAL);
+    public Electrode() {
+        super("Electrode", 60, 50, TipoPokemon.ELECTRICO, EstadoPokemon.NORMAL);
     }
     
 }

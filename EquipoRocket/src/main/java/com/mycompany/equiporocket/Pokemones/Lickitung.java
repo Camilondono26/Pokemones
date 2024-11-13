@@ -14,8 +14,8 @@ import com.mycompany.equiporocket.TipoPokemon;
  */
 public class Lickitung extends Pokemon {
     
-    public Lickitung(String nombre, double salud, double puntosDeAtaque, TipoPokemon tipo, EstadoPokemon estado) {
-        super("Lickitung", 90, 55, tipo.NORMAL, estado.NORMAL);
+    public Lickitung() {
+        super("Lickitung", 90, 55, TipoPokemon.NORMAL, EstadoPokemon.NORMAL);
     }
     
 }

@@ -14,8 +14,8 @@ import com.mycompany.equiporocket.TipoPokemon;
  */
 public class Paras extends Pokemon {
     
-    public Paras(String nombre, double salud, double puntosDeAtaque, TipoPokemon tipo, EstadoPokemon estado) {
-        super("Paras", 35, 70, tipo.BICHO_PLANTA, estado.NORMAL);
+    public Paras() {
+        super("Paras", 35, 70, TipoPokemon.BICHO_PLANTA, EstadoPokemon.NORMAL);
     }
     
 }

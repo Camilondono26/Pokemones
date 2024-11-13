@@ -14,8 +14,8 @@ import com.mycompany.equiporocket.TipoPokemon;
  */
 public class Staryu extends Pokemon {
     
-    public Staryu(String nombre, double salud, double puntosDeAtaque, TipoPokemon tipo, EstadoPokemon estado) {
-        super("Staryu" , 30, 45, tipo.AGUA, estado.NORMAL);
+    public Staryu() {
+        super("Staryu" , 30, 45, TipoPokemon.AGUA, EstadoPokemon.NORMAL);
     }
     
 }

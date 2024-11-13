@@ -1,13 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.equiporocket;
 
-/**
- *
- * @author USUARIO
- */
+
 public class Batalla {
     public void iniciarBatalla(Pokemon pokemon1, Pokemon pokemon2) {
        
@@ -35,9 +29,9 @@ public class Batalla {
         
         double multiplicador = atacante.getTipo().obtenerMultiplicadorDeDanio(atacante.getTipo(), defensor.getTipo());
         double dano = atacante.getPuntosDeAtaque();
-        defensor.setSalud(defensor.getSalud() - dano);  // Reducir la salud del defensor por el daño recibido
+        defensor.setSalud(defensor.getSalud() - dano);  
         
-        // Mostrar el resultado del ataque
+       
         System.out.println(atacante.getNombre() + " ataca a " + defensor.getNombre() + " causando " + dano + " puntos de daño.");
         System.out.println(defensor.getNombre() + " - Salud restante: " + defensor.getSalud());
     }
